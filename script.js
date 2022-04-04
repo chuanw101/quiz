@@ -171,6 +171,8 @@ function saveScore(event) {
         //update localStorage with new array
         localStorage.setItem("scores", JSON.stringify(scores));
     }
+    //clear form
+    ini.value = "";
     showScore();
 }
 
