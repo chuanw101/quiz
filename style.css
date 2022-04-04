@@ -1,0 +1,77 @@
+body {
+    background-color: lightgray;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 3%;
+}
+
+a:link, a:visited, a:active {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(160, 19, 160);
+}
+
+/* flex box for main content of site */
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin:auto;
+    padding: 2% 5% 2% 5%;
+    background-color: white;
+    text-align: center;
+}
+
+p, label, input[type=text]{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* generic format for all buttons */
+button, input[type=submit] {
+    background-color: purple;
+    color: white;
+    width:fit-content;
+    font-size: 18px;
+    padding: 1%;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+/* a little glow effect on hover */
+button:hover, input[type=submit]:hover {
+    background-color: rgb(160, 19, 160);
+}
+
+ol {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* this is the only button we want centered */
+#start {
+    margin: auto;
+}
+
+#msg {
+    width:100%;
+    border-top: 3px solid lightgray;
+    text-align:left;
+    color:lightgray;
+}

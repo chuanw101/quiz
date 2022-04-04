@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Site</title>
+</head>
+<body>
+    <header>
+        <h2><a href="#" onclick="showScore()">View HighScores</a></h2>
+        <h2>Time:&nbsp <span id="time">75</span></h2>
+    </header>
+    <!-- shown at start -->
+    <section class="container">
+        <h1>State Capital Quiz Challenge</h1>
+        <p>Try to answer the following state capital related questions within the time limit.
+            Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button id="start">Start Quiz</button>
+    </section>
+    <!-- shown when doing quiz -->
+    <section class="container" style="display:none">
+        <h1></h1>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+    </section>
+    <!-- shown when done with quiz -->
+    <section class="container" style="display:none">
+        <h1>All done!</h1>
+        <p>Your final score is:&nbsp <span id="score"></span></p>
+        <form>
+            <label for="initials">Enter your initials: </label>
+            <input type="text" maxlength="8" size = "8" id="ini" name = "initials">
+            <input type="submit" id="sub" value = "Submit">
+        </form>
+    </section>
+    <!-- shown when viewing highscore or just entered a high score -->
+    <section class="container" style="display:none">
+        <h1>High Scores</h1>
+        <ol id="score-list">
+        </ol>
+        <div>
+            <button id="back">Go Back</button>
+            <button id="reset">Reset High Score</button>
+        </div>
+    </section>
+    <!-- to show if answer is correct/wrong -->
+    <section class="container">
+        <p id = "msg" style="display:none"></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
